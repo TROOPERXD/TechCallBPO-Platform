@@ -1,0 +1,14 @@
+.shifts-container {
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 800px;
+}
+
+#shifts-calendar {
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-top: 1rem;
+}
