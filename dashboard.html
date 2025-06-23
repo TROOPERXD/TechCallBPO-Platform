@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard - TechCallBPO</title>
+    <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="toolbar">
+        <div class="logo">
+            <i class="fas fa-headset"></i>
+            <span>TechCallBPO</span>
+        </div>
+        <nav class="nav-links">
+            <a href="transportation.html">Transportation</a>
+            <a href="payroll.html">Payroll</a>
+            <a href="shifts.html">Shifts</a>
+            <a href="growth_opportunities.html">Growth</a>
+            <a href="employee_metrics.html">Metrics</a>
+            <a href="pqrs.html">PQRS</a>
+        </nav>
+        <div class="user-profile">
+            <img src="images/default-avatar.svg" alt="User Avatar" class="avatar">
+            <button id="logout-btn">Logout</button>
+        </div>
+    </div>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>Welcome, <span id="username"></span>!</h1>
+        </header>
+        <main class="dashboard-main">
+            <div class="dashboard-grid">
+                <div class="card">
+                    <a href="transportation.html" class="card-link">
+                        <i class="fas fa-bus"></i>
+                        <h3>Request Transportation</h3>
+                        <p>Schedule your ride to and from work.</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="payroll.html" class="card-link">
+                        <i class="fas fa-money-check-alt"></i>
+                        <h3>Consult Payroll</h3>
+                        <p>Access your payroll information.</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="shifts.html" class="card-link">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h3>Check Shifts</h3>
+                        <p>View your upcoming work shifts.</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="growth_opportunities.html" class="card-link">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Growth Opportunities</h3>
+                        <p>Apply for new roles and advance your career.</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="employee_metrics.html" class="card-link">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <h3>Check Metrics</h3>
+                        <p>Review your performance metrics.</p>
+                    </a>
+                </div>
+
+            </div>
+        </main>
+        <footer class="dashboard-footer">
+            <div class="footer-item">
+                <a href="pqrs.html" class="footer-link">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Submit PQRS</h3>
+                    <p>File petitions, complaints, or suggestions.</p>
+                </a>
+            </div>
+            <div class="footer-item">
+                <i class="fas fa-headset"></i>
+                <h3>Contact HR</h3>
+                <p><i class="fas fa-phone"></i> Phone: 123-456-7890</p>
+                <p><i class="fas fa-fax"></i> PBX: 12345</p>
+                <p><i class="fas fa-envelope"></i> Email: hr@techcallbpo.com</p>
+            </div>
+        </footer>
+    </div>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

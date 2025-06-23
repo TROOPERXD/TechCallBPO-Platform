@@ -1,0 +1,96 @@
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.metric-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    color: #333;
+}
+
+.metric-card h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.metric-value {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #007bff;
+    margin: 10px 0;
+}
+
+.metric-trend {
+    font-size: 1em;
+    color: #555;
+}
+
+.attainment-card .metric-value {
+    color: #28a745;
+}
+
+.bonus-card .metric-value {
+    color: #ffc107;
+}
+
+.charts-container {
+    grid-column: 1 / -1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    color: #333;
+}
+
+.chart-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #4a00e0, #8e2de2);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 300px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sidebar h1 {
+    font-size: 2.5em;
+    line-height: 1.2;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+main {
+    flex: 1;
+    padding: 40px;
+    background-color: #f4f7f6;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}

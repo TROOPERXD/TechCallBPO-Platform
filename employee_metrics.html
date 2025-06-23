@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Metrics - TechCallBPO  </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/employee_metrics.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h1>Employee Performance Metrics</h1>
+            <a href="/dashboard.html">Back to Dashboard</a>
+        </aside>
+        <main>
+        <div class="metrics-grid">
+                <div class="metric-card">
+                    <h2>Average Handle Time (AHT)</h2>
+                    <p class="metric-value" id="aht-value">4:32</p>
+                    <p class="metric-trend">Target: < 5:00</p>
+                </div>
+                <div class="metric-card">
+                    <h2>Customer Satisfaction (CSAT)</h2>
+                    <p class="metric-value" id="csat-value">92%</p>
+                    <p class="metric-trend">Target: > 90%</p>
+                </div>
+                <div class="metric-card">
+                    <h2>First Call Resolution (FCR)</h2>
+                    <p class="metric-value" id="fcr-value">85%</p>
+                    <p class="metric-trend">Target: > 80%</p>
+                </div>
+                <div class="metric-card">
+                    <h2>Calls Answered</h2>
+                    <p class="metric-value" id="calls-answered-value">128</p>
+                    <p class="metric-trend">Target: > 100</p>
+                </div>
+                <div class="metric-card attainment-card">
+                    <h2>Total Attainment</h2>
+                    <p class="metric-value" id="total-attainment">--%</p>
+                    <p class="metric-trend">Overall performance against targets</p>
+                </div>
+                <div class="metric-card bonus-card">
+                    <h2>Estimated Monthly Bonus</h2>
+                    <p class="metric-value" id="estimated-bonus">$---</p>
+                    <p class="metric-trend">Based on current attainment</p>
+                </div>
+                <div class="charts-container">
+                    <h2>Performance Over Time</h2>
+                    <canvas id="performanceChart"></canvas>
+                </div>
+            </div>
+    </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 TechCallBPO. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/employee_metrics.js"></script>
+</body>
+</html>

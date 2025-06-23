@@ -1,0 +1,169 @@
+/* General Body Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #005f73;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+header h1 .fa-bus {
+    margin-right: 10px;
+}
+
+.back-button {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s;
+}
+
+.back-button:hover {
+    color: #94d2bd;
+}
+
+/* Main Content Styles */
+main {
+    padding: 2rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    text-align: center;
+    color: #005f73;
+    margin-bottom: 2rem;
+}
+
+/* Calendar Styles */
+.calendar-container {
+    margin-bottom: 2rem;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.calendar-header button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #005f73;
+    transition: color 0.3s;
+}
+
+.calendar-header button:hover {
+    color: #0a9396;
+}
+
+#month-year {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #001219;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    text-align: center;
+}
+
+.calendar-day {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.calendar-day.assigned-shift {
+    background-color: #94d2bd;
+    color: #001219;
+    font-weight: bold;
+}
+
+.calendar-day:hover {
+    background-color: #e9ecef;
+}
+
+/* Shift Details Styles */
+.shift-details {
+    background-color: #e9f5f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.shift-details h3 {
+    margin-top: 0;
+    color: #005f73;
+}
+
+/* Route Selection Styles */
+.route-selection {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.route-selection h3 {
+    text-align: center;
+    color: #005f73;
+    margin-bottom: 1.5rem;
+}
+
+.route-option {
+    margin-bottom: 1rem;
+}
+
+.route-option h4 {
+    color: #003440;
+    margin-bottom: 0.5rem;
+}
+
+.route-option label {
+    display: inline-block;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: #001219;
+    color: #fff;
+}
